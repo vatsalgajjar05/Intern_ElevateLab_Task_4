@@ -21,26 +21,26 @@ sudo ufw enable
 
 Output confirmed: Firewall is active.
 
-**2️⃣  Listed Current Firewall Rules** 
+2️⃣  Listed Current Firewall Rules 
 sudo ufw status numbered
 
 
 This showed existing allow/deny policies (mostly default).
 
-**3️⃣ Blocked Inbound Traffic on Telnet Port 23**
+3️⃣ Blocked Inbound Traffic on Telnet Port 23
 sudo ufw deny 23
 
 
 This rule prevents Telnet attacks and unauthorized access attempts.
 
-**4️⃣ Tested the Rule**
+4️⃣ Tested the Rule
 telnet localhost 23
 
 
-**Result:**
+Result:
 ⚠️ Connection refused → Rule successfully blocking port 23
 
-**5️⃣ Allowed SSH (Port 22)**
+5️⃣ Allowed SSH (Port 22)
 
 (SSH is important for remote access)
 
@@ -49,14 +49,14 @@ sudo ufw allow 22/tcp
 
 This ensures SSH remains working and not blocked.
 
-### 1️⃣ Checked UFW Installation & Enabled Firewall
+### 6️⃣ Checked UFW Installation & Enabled Firewall
 ```bash
 sudo ufw delete deny 23
 
 
 Now Telnet port access is back to normal (not that I need Telnet 😅)
 
-**📌 Final UFW Status Screenshot**
+📌 Final UFW Status Screenshot
 
 (Screenshot is included inside screenshots/ folder in this repository)
 
