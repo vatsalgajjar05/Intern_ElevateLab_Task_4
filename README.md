@@ -49,14 +49,14 @@ sudo ufw allow 22/tcp
 
 This ensures SSH remains working and not blocked.
 
-### 6️⃣ Checked UFW Installation & Enabled Firewall
-```bash
+6️⃣ Checked UFW Installation & Enabled Firewall
+
 sudo ufw delete deny 23
 
 
 Now Telnet port access is back to normal (not that I need Telnet 😅)
 
-📌 Final UFW Status Screenshot
+📌 Final UFW Status
 
 (Screenshot is included inside screenshots/ folder in this repository)
 
